@@ -1,0 +1,27 @@
+.stApp { background: #f7faf7; }
+.block-container { max-width: 900px; padding-top: 4.5rem; padding-bottom: 6rem; }
+.brand-line { font-size: .78rem; font-weight: 800; letter-spacing: .12em; margin-bottom: 1.5rem; color: #1c4035; }
+.brand-line span { float: right; color: #65776d; font-size: .65rem; padding-top: .1rem; }
+.hero { padding: 2.5rem; margin-bottom: 1.5rem; background: #e4efe5; border-radius: 24px; border: 1px solid #d6e5d8; }
+.eyebrow { color: #3d6853; font-size: .7rem; font-weight: 700; letter-spacing: .16em; }
+.hero h1 { font-size: clamp(2.4rem, 5vw, 3.5rem); line-height: 1.08; letter-spacing: -.045em; color: #173c2f; margin: 1rem 0; padding: 0; }
+.hero p { color: #486455; line-height: 1.7; font-size: 1rem; }
+[data-testid="stSidebar"] { background: #16352e; }
+[data-testid="stSidebar"] h2, [data-testid="stSidebar"] h4,
+[data-testid="stSidebar"] p, [data-testid="stSidebar"] label { color: #e4eee7; }
+[data-testid="stSidebar"] a { color: #b6ddbf; }
+[data-testid="stSidebar"] hr { border-color: #36554b; }
+[data-testid="stChatMessage"] { width: fit-content; max-width: 85%; margin-right: auto; background: #fff; border: 1px solid #e2eae3; border-radius: 16px; padding: 1.1rem; }
+[data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarUser"]) { margin-left: auto; margin-right: 0; flex-direction: row-reverse; background: #e4efe5; border-color: #cddfcf; }
+[data-testid="stChatMessageContent"] { min-width: 0; overflow-wrap: anywhere; }
+*, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+[data-testid="stChatInput"] { border-radius: 18px; }
+.stButton button { border-radius: 12px; min-height: 48px; border-color: #d7e3da; font-weight: 600; }
+.stButton button:hover { border-color: #357552; color: #24593e; background: #edf5ef; }
+[data-testid="stSidebar"] .stButton button { background: #e2eee3; color: #193f2d; }
+@media (max-width: 600px) {
+  .block-container { padding-top: 4rem; }
+  .hero { padding: 1.6rem; border-radius: 18px; }
+  .brand-line span { display: none; }
+  [data-testid="stChatMessage"] { max-width: 95%; padding: .8rem; }
+}

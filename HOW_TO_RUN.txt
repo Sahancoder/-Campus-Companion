@@ -1,0 +1,44 @@
+CAMPUS CHATBOT
+
+VS CODE - BROWSER INTERFACE
+1. Open this folder in VS Code.
+2. Open Terminal > New Terminal.
+3. Run:
+   .\.venv\Scripts\python.exe -m streamlit run app.py
+4. Open http://localhost:8501 in your browser.
+5. Enter your Gemini key in the sidebar for general questions.
+   The five FAQ topics work without a key.
+6. Press Ctrl+C in the terminal to stop the server.
+
+GOOGLE COLAB - PYTHON NOTEBOOK
+1. Open https://colab.research.google.com/.
+2. Upload Hybrid_Academic_Chatbot.ipynb.
+3. Run its three code cells from top to bottom.
+4. Enter your Gemini key in the hidden input, or press Enter for FAQs only.
+5. Type questions in the You: box. Type exit, quit or bye to stop.
+
+The notebook contains its own chatbot code; no other project files are needed in Colab.
+Get your Gemini key privately from https://aistudio.google.com/apikey.
+Keep keys out of source code and screenshots. General questions are sent to Google.
+
+SETUP ON ANOTHER COMPUTER (Python 3.10 or later)
+python -m venv .venv
+python -m pip --python .venv install -r requirements.txt
+
+FILES
+app.py                     Browser interface
+hybrid_chatbot.py          Five FAQ rules and Gemini fallback
+style.css                  Interface styles
+.streamlit/config.toml     Interface theme
+requirements.txt           Required packages
+Hybrid_Academic_Chatbot.ipynb  Standalone Python notebook
+HOW_TO_RUN.txt             Run instructions
+
+STREAMLIT COMMUNITY CLOUD
+Repository: Sahancoder/-Campus-Companion
+Branch: main
+Main file: app.py
+Python: 3.12
+Optional Advanced settings > Secrets:
+GEMINI_API_KEY = "paste-your-new-key-here"
+Never commit a real key or secrets.toml to GitHub.
